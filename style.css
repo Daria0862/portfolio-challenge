@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background-color: rgb(176, 206, 176);
+    display: flex;
+    color: rgb(5, 88, 5);
+}
+
+header nav ul li {
+    display: inline-block;
+    color: rgb(5, 88, 5);
+}
+
+header nav ul li a {
+    color: rgb(5, 88, 5);
+}
+
+#navbar {
+    position: absolute;
+    right: 30px;
+}
+
+.hero-banner {
+    width: 100%;
+    height: 150px;
+    background-image: url("https://t3.ftcdn.net/jpg/03/81/71/16/360_F_381711648_RWNGx4G3NNe7IVksImuHt45wWwL4A1mS.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.herotext {
+    font-size: 30px;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: rgb(176, 206, 176);
+}
+
+.workgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: calc(100vh - 10px);
+    grid-template-areas:
+        "project1 project1"
+        "project2 project3"
+        "project4 project5"; 
+    justify-content: end;
+}
+
+.project1 {
+    grid-area: project1;
+    background-image: url("https://strictlywheels.co.uk/wp-content/uploads/2015/04/Contact-us-300x219.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.project2 {
+    grid-area: project2;
+    background-image: url("https://www.w3.org/WAI/content-images/wai-media-guide/body.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.project3 {
+    grid-area: project3;
+    background-image: url("https://thumbs.dreamstime.com/b/isolated-restaurant-building-d-view-vector-illustration-108106878.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.project4 {
+    grid-area: project4;
+    background-image: url("https://media.architecturaldigest.com/photos/62bcb8ce6cf27b95db3b09a9/16:9/w_2560%2Cc_limit/6-29%2520amazon%2520prime%2520upgrades%2520v1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.project5 {
+    grid-area: project5;
+    background-image: url("https://www.4d-dc.com/hs-fs/hubfs/Blog%20post%20header%20images/2018/powershell%20cheat%20sheet.jpg?width=730&name=powershell%20cheat%20sheet.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#projectgrid {
+    margin: 2px solid black;
+
+}
+
+.page-section {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#contact {
+    display: inline-block;
+}
