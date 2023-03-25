@@ -13,6 +13,9 @@ header {
     background-color: rgb(176, 206, 176);
     display: flex;
     color: rgb(5, 88, 5);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 header nav ul li {
